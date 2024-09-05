@@ -1,0 +1,18 @@
+To create a Python program that plays Rock, Paper, Scissors using machine learning and consistently wins over 60% of the games against four different bots, we need a strategy that adapts to the opponents' behavior. We'll use a simple machine learning approach to predict the opponent's next move based on their previous moves.
+
+Here's a basic outline of the solution:
+
+Data Collection: Track the opponent's previous moves.
+Feature Engineering: Use patterns from the opponent's moves to predict their next move.
+Model: Train a model (such as a Markov model or simple pattern recognition) that can predict the opponent's next move.
+Strategy: Use the prediction to make the winning move.
+Step-by-step Implementation
+We will use a simple Markov Chain-based approach to predict the opponent's next move. We'll track their history and adjust our moves accordingly.
+1:Player Strategy: The player uses a simple Markov Chain to predict the bot's next move based on their previous moves. The transition_matrix stores how often a move follows another move, and the player predicts based on the most common following move.
+2:Bot Strategy: The bot plays randomly, but the player can learn and predict its next move over time, adapting to beat it.
+Extending to Multiple Bots:
+To extend this to multiple bots with different strategies, you can replace the random_bot function with different bot implementations. For example:
+
+A cyclical bot that plays in a cycle (e.g., rock -> paper -> scissors).
+A biased bot that favors one move more than others.
+Each bot will challenge the machine learning player to adapt and try to maintain a win rate above 60%.
