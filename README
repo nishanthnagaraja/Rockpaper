@@ -1,7 +1,5 @@
 To create a Python program that plays Rock, Paper, Scissors using machine learning and consistently wins over 60% of the games against four different bots, we need a strategy that adapts to the opponents' behavior. We'll use a simple machine learning approach to predict the opponent's next move based on their previous moves.
-
 Here's a basic outline of the solution:
-
 Data Collection: Track the opponent's previous moves.
 Feature Engineering: Use patterns from the opponent's moves to predict their next move.
 Model: Train a model (such as a Markov model or simple pattern recognition) that can predict the opponent's next move.
